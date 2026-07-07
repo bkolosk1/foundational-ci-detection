@@ -1,0 +1,886 @@
+meta:
+  params:
+    n_splits: 5
+    n_repeats: 5
+    random_state: 42
+    strategy: RepeatedStratifiedKFold
+    id_mode: stem
+    controls_dir: /home/boshkokoloski/work/slo_cookie_lrec/recordings/Controls
+    patients_dir: /home/boshkokoloski/work/slo_cookie_lrec/recordings/patients
+    ctrl_exts:
+    - .mp3
+    - .wav
+    pat_exts:
+    - .m4a
+    - .wav
+  label_map:
+    control: 0
+    patient: 1
+  counts:
+    controls: 15
+    patients: 12
+    total: 27
+  patient_files:
+    controls:
+      HP_10_cookie_theft:
+      - HP_10_cookie_theft.mp3
+      HP_11_cookie_theft:
+      - HP_11_cookie_theft.mp3
+      HP_12_cookie_theft:
+      - HP_12_cookie_theft.mp3
+      HP_13_cookie_theft:
+      - HP_13_cookie_theft.mp3
+      HP_14_cookie_theft:
+      - HP_14_cookie_theft.mp3
+      HP_15_cookie_theft:
+      - HP_15_cookie_theft.mp3
+      HP_1_cookie_theft:
+      - HP_1_cookie_theft.wav
+      HP_2_cookie_theft:
+      - HP_2_cookie_theft.wav
+      HP_3_cookie_theft:
+      - HP_3_cookie_theft.wav
+      HP_4_cookie_theft:
+      - HP_4_cookie_theft.wav
+      HP_5_cookie_theft:
+      - HP_5_cookie_theft.mp3
+      HP_6_cookie_theft:
+      - HP_6_cookie_theft.mp3
+      HP_7_cookie_theft:
+      - HP_7_cookie_theft.mp3
+      HP_8_cookie_theft:
+      - HP_8_cookie_theft.mp3
+      HP_9_cookie_theft:
+      - HP_9_cookie_theft.mp3
+    patients:
+      BK_25.04.:
+      - BK_25.04..m4a
+      IŠ_03.06.2022:
+      - IŠ_03.06.2022.m4a
+      JC STIB in cookie thief 28.10.2021:
+      - JC STIB in cookie thief 28.10.2021.m4a
+      JM_03.06.2022:
+      - JM_03.06.2022.m4a
+      JT 16.08.2021:
+      - JT 16.08.2021.m4a
+      MJ 18.05.2021:
+      - MJ 18.05.2021.m4a
+      MM_03.06.2022:
+      - MM_03.06.2022.m4a
+      OS 30.04.2021:
+      - OS 30.04.2021.m4a
+      PV 28.04.2021:
+      - PV 28.04.2021.m4a
+      TB 18.02. - prvi pregled:
+      - TB 18.02. - prvi pregled.m4a
+      VVk_19.04.2022:
+      - VVk_19.04.2022.m4a
+      ZM 23.04.2021:
+      - ZM 23.04.2021.m4a
+  notes: IDs are derived from filename stems by default (ID_MODE='stem'). Set ID_MODE='prefix'
+    to collapse multiple sessions per subject. Stored file names are basenames only
+    (after last '/').
+splits:
+- repeat: 1
+  fold: 1
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_12_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - JC STIB in cookie thief 28.10.2021
+  - MM_03.06.2022
+  - TB 18.02. - prvi pregled
+- repeat: 1
+  fold: 2
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MM_03.06.2022
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_14_cookie_theft
+  - HP_4_cookie_theft
+  - HP_8_cookie_theft
+  - MJ 18.05.2021
+  - OS 30.04.2021
+  - PV 28.04.2021
+- repeat: 1
+  fold: 3
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  test_ids:
+  - HP_15_cookie_theft
+  - HP_5_cookie_theft
+  - HP_9_cookie_theft
+  - JT 16.08.2021
+  - ZM 23.04.2021
+- repeat: 1
+  fold: 4
+  train_ids:
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - JC STIB in cookie thief 28.10.2021
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_6_cookie_theft
+  - IŠ_03.06.2022
+  - JM_03.06.2022
+- repeat: 1
+  fold: 5
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - ZM 23.04.2021
+  test_ids:
+  - HP_13_cookie_theft
+  - HP_3_cookie_theft
+  - HP_7_cookie_theft
+  - BK_25.04.
+  - VVk_19.04.2022
+- repeat: 2
+  fold: 1
+  train_ids:
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MM_03.06.2022
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_10_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - IŠ_03.06.2022
+  - MJ 18.05.2021
+  - OS 30.04.2021
+- repeat: 2
+  fold: 2
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - ZM 23.04.2021
+  test_ids:
+  - HP_12_cookie_theft
+  - HP_2_cookie_theft
+  - HP_7_cookie_theft
+  - BK_25.04.
+  - MM_03.06.2022
+  - VVk_19.04.2022
+- repeat: 2
+  fold: 3
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  test_ids:
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_5_cookie_theft
+  - JM_03.06.2022
+  - ZM 23.04.2021
+- repeat: 2
+  fold: 4
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_13_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - JT 16.08.2021
+  - TB 18.02. - prvi pregled
+- repeat: 2
+  fold: 5
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_11_cookie_theft
+  - HP_14_cookie_theft
+  - HP_6_cookie_theft
+  - JC STIB in cookie thief 28.10.2021
+  - PV 28.04.2021
+- repeat: 3
+  fold: 1
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_15_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - ZM 23.04.2021
+  test_ids:
+  - HP_14_cookie_theft
+  - HP_1_cookie_theft
+  - HP_6_cookie_theft
+  - BK_25.04.
+  - JM_03.06.2022
+  - VVk_19.04.2022
+- repeat: 3
+  fold: 2
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_6_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - VVk_19.04.2022
+  test_ids:
+  - HP_15_cookie_theft
+  - HP_5_cookie_theft
+  - HP_7_cookie_theft
+  - JT 16.08.2021
+  - TB 18.02. - prvi pregled
+  - ZM 23.04.2021
+- repeat: 3
+  fold: 3
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - BK_25.04.
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_9_cookie_theft
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+- repeat: 3
+  fold: 4
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_8_cookie_theft
+  - MJ 18.05.2021
+  - PV 28.04.2021
+- repeat: 3
+  fold: 5
+  train_ids:
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_2_cookie_theft
+  - MM_03.06.2022
+  - OS 30.04.2021
+- repeat: 4
+  fold: 1
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_9_cookie_theft
+  - IŠ_03.06.2022
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_8_cookie_theft
+  - BK_25.04.
+  - JC STIB in cookie thief 28.10.2021
+  - PV 28.04.2021
+- repeat: 4
+  fold: 2
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - JC STIB in cookie thief 28.10.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_6_cookie_theft
+  - IŠ_03.06.2022
+  - JM_03.06.2022
+  - JT 16.08.2021
+- repeat: 4
+  fold: 3
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - MJ 18.05.2021
+  - MM_03.06.2022
+- repeat: 4
+  fold: 4
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_8_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  test_ids:
+  - HP_11_cookie_theft
+  - HP_7_cookie_theft
+  - HP_9_cookie_theft
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+- repeat: 4
+  fold: 5
+  train_ids:
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - PV 28.04.2021
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_10_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - OS 30.04.2021
+  - TB 18.02. - prvi pregled
+- repeat: 5
+  fold: 1
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - ZM 23.04.2021
+  test_ids:
+  - HP_2_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - JT 16.08.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+- repeat: 5
+  fold: 2
+  train_ids:
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JT 16.08.2021
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_10_cookie_theft
+  - HP_13_cookie_theft
+  - HP_3_cookie_theft
+  - JM_03.06.2022
+  - MJ 18.05.2021
+  - MM_03.06.2022
+- repeat: 5
+  fold: 3
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_15_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_5_cookie_theft
+  - HP_6_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - IŠ_03.06.2022
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  test_ids:
+  - HP_11_cookie_theft
+  - HP_1_cookie_theft
+  - HP_7_cookie_theft
+  - PV 28.04.2021
+  - ZM 23.04.2021
+- repeat: 5
+  fold: 4
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_13_cookie_theft
+  - HP_15_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_4_cookie_theft
+  - HP_6_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - BK_25.04.
+  - JC STIB in cookie thief 28.10.2021
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_12_cookie_theft
+  - HP_14_cookie_theft
+  - HP_5_cookie_theft
+  - IŠ_03.06.2022
+  - OS 30.04.2021
+- repeat: 5
+  fold: 5
+  train_ids:
+  - HP_10_cookie_theft
+  - HP_11_cookie_theft
+  - HP_12_cookie_theft
+  - HP_13_cookie_theft
+  - HP_14_cookie_theft
+  - HP_1_cookie_theft
+  - HP_2_cookie_theft
+  - HP_3_cookie_theft
+  - HP_5_cookie_theft
+  - HP_7_cookie_theft
+  - HP_8_cookie_theft
+  - HP_9_cookie_theft
+  - IŠ_03.06.2022
+  - JM_03.06.2022
+  - JT 16.08.2021
+  - MJ 18.05.2021
+  - MM_03.06.2022
+  - OS 30.04.2021
+  - PV 28.04.2021
+  - TB 18.02. - prvi pregled
+  - VVk_19.04.2022
+  - ZM 23.04.2021
+  test_ids:
+  - HP_15_cookie_theft
+  - HP_4_cookie_theft
+  - HP_6_cookie_theft
+  - BK_25.04.
+  - JC STIB in cookie thief 28.10.2021
+all_ids:
+- HP_10_cookie_theft
+- HP_11_cookie_theft
+- HP_12_cookie_theft
+- HP_13_cookie_theft
+- HP_14_cookie_theft
+- HP_15_cookie_theft
+- HP_1_cookie_theft
+- HP_2_cookie_theft
+- HP_3_cookie_theft
+- HP_4_cookie_theft
+- HP_5_cookie_theft
+- HP_6_cookie_theft
+- HP_7_cookie_theft
+- HP_8_cookie_theft
+- HP_9_cookie_theft
+- BK_25.04.
+- IŠ_03.06.2022
+- JC STIB in cookie thief 28.10.2021
+- JM_03.06.2022
+- JT 16.08.2021
+- MJ 18.05.2021
+- MM_03.06.2022
+- OS 30.04.2021
+- PV 28.04.2021
+- TB 18.02. - prvi pregled
+- VVk_19.04.2022
+- ZM 23.04.2021

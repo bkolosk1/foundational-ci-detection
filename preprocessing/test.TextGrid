@@ -1,0 +1,210 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 10.0
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 10.0
+        intervals: size = 49 
+        intervals [1]:
+            xmin = 0.0
+            xmax = 0.2666666666666667
+            text = "Okay..."
+        intervals [2]:
+            xmin = 0.2666666666666667
+            xmax = 0.5
+            text = "Wait a second..."
+        intervals [3]:
+            xmin = 0.5
+            xmax = 0.8666666666666667
+            text = "I see..."
+        intervals [4]:
+            xmin = 0.8666666666666667
+            xmax = 1.0
+            text = "Right..."
+        intervals [5]:
+            xmin = 1.0
+            xmax = 1.1333333333333333
+            text = "Alright..."
+        intervals [6]:
+            xmin = 1.1333333333333333
+            xmax = 1.2666666666666666
+            text = "Hmm..."
+        intervals [7]:
+            xmin = 1.2666666666666666
+            xmax = 1.5
+            text = "Wait..."
+        intervals [8]:
+            xmin = 1.5
+            xmax = 1.8666666666666667
+            text = "Okay..."
+        intervals [9]:
+            xmin = 1.8666666666666667
+            xmax = 2.0
+            text = "Right..."
+        intervals [10]:
+            xmin = 2.0
+            xmax = 2.1333333333333333
+            text = "Hmm..."
+        intervals [11]:
+            xmin = 2.1333333333333333
+            xmax = 2.2666666666666666
+            text = "Wait a second..."
+        intervals [12]:
+            xmin = 2.2666666666666666
+            xmax = 2.5
+            text = "Alright..."
+        intervals [13]:
+            xmin = 2.5
+            xmax = 2.8666666666666666
+            text = "Hmm..."
+        intervals [14]:
+            xmin = 2.8666666666666666
+            xmax = 3.0
+            text = "Okay..."
+        intervals [15]:
+            xmin = 3.0
+            xmax = 3.1333333333333333
+            text = "Wait..."
+        intervals [16]:
+            xmin = 3.1333333333333333
+            xmax = 3.2666666666666666
+            text = "Right..."
+        intervals [17]:
+            xmin = 3.2666666666666666
+            xmax = 3.5
+            text = "Hmm..."
+        intervals [18]:
+            xmin = 3.5
+            xmax = 3.8666666666666666
+            text = "Wait a second..."
+        intervals [19]:
+            xmin = 3.8666666666666666
+            xmax = 4.0
+            text = "Alright..."
+        intervals [20]:
+            xmin = 4.0
+            xmax = 4.133333333333333
+            text = "Hmm..."
+        intervals [21]:
+            xmin = 4.133333333333333
+            xmax = 4.266666666666667
+            text = "Okay..."
+        intervals [22]:
+            xmin = 4.266666666666667
+            xmax = 4.5
+            text = "Wait..."
+        intervals [23]:
+            xmin = 4.5
+            xmax = 4.866666666666667
+            text = "Hmm..."
+        intervals [24]:
+            xmin = 4.866666666666667
+            xmax = 5.0
+            text = "Right..."
+        intervals [25]:
+            xmin = 5.0
+            xmax = 5.133333333333333
+            text = "Alright..."
+        intervals [26]:
+            xmin = 5.133333333333333
+            xmax = 5.266666666666667
+            text = "Hmm..."
+        intervals [27]:
+            xmin = 5.266666666666667
+            xmax = 5.5
+            text = "Wait a second..."
+        intervals [28]:
+            xmin = 5.5
+            xmax = 5.866666666666667
+            text = "Hmm..."
+        intervals [29]:
+            xmin = 5.866666666666667
+            xmax = 6.0
+            text = "Okay..."
+        intervals [30]:
+            xmin = 6.0
+            xmax = 6.133333333333333
+            text = "Wait..."
+        intervals [31]:
+            xmin = 6.133333333333333
+            xmax = 6.266666666666667
+            text = "Hmm..."
+        intervals [32]:
+            xmin = 6.266666666666667
+            xmax = 6.5
+            text = "Alright..."
+        intervals [33]:
+            xmin = 6.5
+            xmax = 6.866666666666667
+            text = "Hmm..."
+        intervals [34]:
+            xmin = 6.866666666666667
+            xmax = 7.0
+            text = "Right..."
+        intervals [35]:
+            xmin = 7.0
+            xmax = 7.133333333333333
+            text = "Okay..."
+        intervals [36]:
+            xmin = 7.133333333333333
+            xmax = 7.266666666666667
+            text = "Wait a second..."
+        intervals [37]:
+            xmin = 7.266666666666667
+            xmax = 7.5
+            text = "Hmm..."
+        intervals [38]:
+            xmin = 7.5
+            xmax = 7.866666666666667
+            text = "Alright..."
+        intervals [39]:
+            xmin = 7.866666666666667
+            xmax = 8.0
+            text = "Hmm..."
+        intervals [40]:
+            xmin = 8.0
+            xmax = 8.133333333333334
+            text = "Wait..."
+        intervals [41]:
+            xmin = 8.133333333333334
+            xmax = 8.266666666666667
+            text = "Right..."
+        intervals [42]:
+            xmin = 8.266666666666667
+            xmax = 8.5
+            text = "Hmm..."
+        intervals [43]:
+            xmin = 8.5
+            xmax = 8.866666666666666
+            text = "Okay..."
+        intervals [44]:
+            xmin = 8.866666666666666
+            xmax = 9.0
+            text = "Wait a second..."
+        intervals [45]:
+            xmin = 9.0
+            xmax = 9.133333333333334
+            text = "Hmm..."
+        intervals [46]:
+            xmin = 9.133333333333334
+            xmax = 9.266666666666667
+            text = "Alright..."
+        intervals [47]:
+            xmin = 9.266666666666667
+            xmax = 9.5
+            text = "Hmm..."
+        intervals [48]:
+            xmin = 9.5
+            xmax = 9.866666666666666
+            text = "Wait..."
+        intervals [49]:
+            xmin = 9.866666666666666
+            xmax = 10.0
+            text = "Right..."

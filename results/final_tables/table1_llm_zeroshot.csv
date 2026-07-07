@@ -1,0 +1,4 @@
+Model,Variant,english,korean,mandarin,slovene,Avg
+gpt-oss-20b,transcript_only,0.585,0.558,0.458,0.603,0.551
+gpt-oss-20b,linguistic_only,0.462,0.371,0.474,0.432,0.435
+gpt-oss-20b,full_data,0.438,0.610,0.495,0.603,0.537

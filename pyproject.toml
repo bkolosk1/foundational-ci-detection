@@ -1,0 +1,25 @@
+[project]
+name = "slo-cookie-lrec"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "lightgbm>=4.6.0",
+    "matplotlib>=3.9.0",
+    "numpy>=2.3.3",
+    "openai>=2.21.0",
+    "openai-whisper>=20250625",
+    "pandas>=2.3.3",
+    "protobuf>=6.32.1",
+    "python-dotenv>=1.0.0",
+    "pytabkit[models]>=1.7.3",
+    "scikit-learn>=1.7.2",
+    "sentence-transformers>=3.0.0",
+    "tabpfn>=6.3.1",
+    "textgrid>=1.6.1",
+    "torchaudio>=2.8.0",
+    "tqdm>=4.67.1",
+    "transformers>=4.56.2",
+    "typing-extensions>=4.15.0",
+]

@@ -1,0 +1,61 @@
+Bootstrap: docker
+From: python:3.12-slim
+
+%post
+    # Update and install dependencies including CA certificates
+    apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        ca-certificates \
+        curl \
+        && rm -rf /var/lib/apt/lists/* \
+        && apt-get clean
+    
+    # Update CA certificates
+    update-ca-certificates
+    
+    # Install uv (much faster than pip for vLLM)
+    pip install --no-cache-dir uv
+    
+    # Create virtual environment
+    uv venv --python 3.12 /opt/venv
+    . /opt/venv/bin/activate
+    
+    # Install packages with uv
+    uv pip install --no-cache-dir \
+        vllm --torch-backend=auto \
+        pandas \
+        scikit-learn \
+        numpy \
+        tqdm
+
+    # Install TabPFN (from PriorLabs)
+    uv pip install --no-cache-dir tabpfn
+
+    # Install pytabkit (includes RealMLP, TabICL, etc.)
+    uv pip install --no-cache-dir pytabkit
+
+    # Install lazypredict for quick model benchmarking
+    uv pip install --no-cache-dir lazypredict
+
+    # Install sentence-transformers for text embeddings
+    uv pip install --no-cache-dir sentence-transformers
+
+%environment
+    export LC_ALL=C.UTF-8
+    export LANG=C.UTF-8
+    export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+    export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+    export PATH="/opt/venv/bin:$PATH"
+
+%runscript
+    exec python "$@"
+
+%test
+    # Test basic functionality
+    python -c "import pandas as pd; import sklearn; print('Data science packages OK')"
+    python -c "import torch; print(f'PyTorch CUDA: {torch.cuda.is_available()}')"
+    python -c "import vllm; print('vLLM imported successfully')"
+    python -c "from tabpfn import TabPFNClassifier; print('TabPFN OK')"
+    python -c "from pytabkit import RealMLP_TD_Classifier; print('pytabkit OK')"
+    python -c "import lazypredict; print('lazypredict OK')"
+    python -c "from sentence_transformers import SentenceTransformer; print('sentence-transformers OK')"
